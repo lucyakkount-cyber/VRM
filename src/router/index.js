@@ -1,7 +1,8 @@
+import { Component } from 'lucide-vue-next'
 import { createRouter, createWebHistory } from 'vue-router'
-
+import Chat from '../App.vue'
 const routes = [
-  { path: '/', name: 'chat' },
+  { path: '/', name: 'chat', Component: Chat },
 
   // Animation paths
   {
