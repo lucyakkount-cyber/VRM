@@ -32,7 +32,7 @@ export class AudioManager {
 
   async generateTTS(text, config) {
     try {
-      const ttsUrl = ' http://127.0.0.1:9880/tts'
+      const ttsUrl = 'https://9880-gpu-t4-s-38ivxv7qjw7mg-b.us-west4-0.prod.colab.dev/tts'
       const payload = {
         text,
         ref_audio_path: config.sovits_ping_config?.ref_audio_path,
