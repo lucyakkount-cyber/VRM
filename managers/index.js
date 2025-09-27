@@ -22,7 +22,7 @@ export const DEFAULT_CONFIG = {
     position: { x: 0, y: -2, z: -0.5 },
   },
   audio: {
-    ttsUrl: 'https://9880-gpu-t4-s-38ivxv7qjw7mg-b.us-west4-0.prod.colab.dev/tts',
+    ttsUrl: ' http://127.0.0.1:9880/ttstts',
     speechLang: 'en-US',
   },
   ai: {

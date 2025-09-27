@@ -66,7 +66,7 @@ export class ConfigManager {
         ],
       },
       audio_config: {
-        tts_url: 'https://9880-gpu-t4-s-38ivxv7qjw7mg-b.us-west4-0.prod.colab.dev/tts',
+        tts_url: ' http://127.0.0.1:9880/ttstts',
         speech_recognition_lang: 'en-US',
         audio_context_options: {
           sampleRate: 44100,
@@ -154,7 +154,7 @@ export class ConfigManager {
 
   getAudioConfig() {
     return this.get('audio_config', {
-      tts_url: 'https://9880-gpu-t4-s-38ivxv7qjw7mg-b.us-west4-0.prod.colab.dev/tts',
+      tts_url: ' http://127.0.0.1:9880/ttstts',
       speech_recognition_lang: 'en-US',
       audio_context_options: {
         sampleRate: 44100,
@@ -163,7 +163,7 @@ export class ConfigManager {
   }
 
   getTTSUrl() {
-    return this.get('audio_config.tts_url', 'https://9880-gpu-t4-s-38ivxv7qjw7mg-b.us-west4-0.prod.colab.dev/tts')
+    return this.get('audio_config.tts_url', ' http://127.0.0.1:9880/ttstts')
   }
 
   getSpeechRecognitionLang() {
