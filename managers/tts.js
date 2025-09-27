@@ -4,7 +4,7 @@ import axios from 'axios'
 export function useTTS(charConfig) {
   async function sovitsGen(text, config) {
     try {
-      const ttsUrl = ' http://127.0.0.1:9880/ttstts'
+      const ttsUrl = ' http://127.0.0.1:9880/tts'
       const payload = {
         text,
         ref_audio_path: config.sovits_ping_config?.ref_audio_path,

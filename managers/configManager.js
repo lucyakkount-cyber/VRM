@@ -66,7 +66,7 @@ export class ConfigManager {
         ],
       },
       audio_config: {
-        tts_url: ' http://127.0.0.1:9880/ttstts',
+        tts_url: ' http://127.0.0.1:9880/tts',
         speech_recognition_lang: 'en-US',
         audio_context_options: {
           sampleRate: 44100,
@@ -154,7 +154,7 @@ export class ConfigManager {
 
   getAudioConfig() {
     return this.get('audio_config', {
-      tts_url: ' http://127.0.0.1:9880/ttstts',
+      tts_url: ' http://127.0.0.1:9880/tts',
       speech_recognition_lang: 'en-US',
       audio_context_options: {
         sampleRate: 44100,
@@ -163,7 +163,7 @@ export class ConfigManager {
   }
 
   getTTSUrl() {
-    return this.get('audio_config.tts_url', ' http://127.0.0.1:9880/ttstts')
+    return this.get('audio_config.tts_url', ' http://127.0.0.1:9880/tts')
   }
 
   getSpeechRecognitionLang() {
